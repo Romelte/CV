@@ -1,13 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('toggle-mode');
-    const printButton = document.getElementById('print-btn');
 
     toggleButton.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
-        toggleButton.textContent = document.body.classList.contains('dark-mode') ? 'Modo Claro' : 'Modo Oscuro';
-    });
-
-    printButton.addEventListener('click', () => {
-        window.print();
+        const isDarkMode = document.body.classList.contains('dark-mode');
+        toggleButton.querySelector('.fa-moon').style.display = isDarkMode ? 'none' : 'block';
+        toggleButton.querySelector('.fa-sun').style.display = isDarkMode ? 'block' : 'none';
     });
 });
+

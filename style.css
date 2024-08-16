@@ -22,8 +22,7 @@ header {
     width: 150px;
     height: 150px;
     object-fit: cover;
-    border-color: black;
-    border-width: 3px;
+    border: 3px solid black;
 }
 
 button {
@@ -32,15 +31,39 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 button#toggle-mode {
+    
+    border-radius: 25px;
+    padding: 20px;
+    font-size: 1rem;
     background-color: #007bff;
     color: #fff;
 }
 
-button#toggle-mode.dark-mode {
-    background-color: #343a40;
+button#toggle-mode .fa-moon,
+button#toggle-mode .fa-sun {
+    position: absolute;
+    font-size: 1rem;
+}
+
+button#toggle-mode .fa-sun {
+    display: none;
+}
+
+button#toggle-mode.dark-mode .fa-sun {
+    display: block;
+}
+
+button#toggle-mode.dark-mode .fa-moon {
+    display: none;
 }
 
 button#print-btn {
@@ -53,10 +76,54 @@ button#print-btn {
     color: #e0e0e0;
 }
 
+.dark-mode a {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+
 .dark-mode button#toggle-mode {
     background-color: #6c757d;
 }
 
 .dark-mode button#print-btn {
     background-color: #218838;
+}
+
+.two-column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+}
+
+@media print {
+    button {
+        display: none;
+    }
+}
+
+footer{
+    
+    border:1px  solid #6c757d;
+    text-align: center;
+}
+
+.text-h{
+    font-weight: bold;
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+a:hover{
+ color: red;
+ font-size: 18px;
 }

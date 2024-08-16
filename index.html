@@ -5,46 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Romel Arango</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <header>
             <img src="foto.jpg" alt="Foto de perfil" class="profile-img">
             <h1>Romel Arango</h1>
-            <strong><p>Desarrollador Fullstack</p></strong>
-            <button id="toggle-mode">Modo Oscuro</button>
+            <p class="text-h">Desarrollador Fullstack</p>
+            <p class="text-h">Correo: romelyalexa@gmail.com</p>
+            <button id="toggle-mode" aria-label="Cambiar modo">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
         </header>
         
         <section class="content">
-            <h2>Experiencia</h2>
-            <p><strong>-Desarrollador Web</strong> en Icono Virtual. (2023 - Presente)</p>
-            <p>Gestion de equipos de desarrollo</p>
-            <p>Desarrollo Backend y Frontend</p>
-            <p>Manejo de servidores (Hostinger, Bananahosting, Inmotion)</p>
-            <br>
-            <p><strong>-Desarrollador Web</strong> en DNA Music. (Feb 2022 - Ago 2022)</p>
-            <p>Administración y desarrollo con Moodle</p>
-            <p>Desarrollo Backend y Frontend</p>
-            <p>Administración de automatizaciones de API con Zapier y Hechas in house.</p>
-            <br>
-            <p><strong>-Desarrollador Web</strong> en Icono Virtual. (Feb 2020 - Feb 2022)</p>
-            <p>Desarrollo Backend y Frontend</p>
+            <div class="two-column">
+                <div class="column">
+                    <h2>Experiencia</h2>
+                    <p><strong>-Desarrollador Web</strong> en Icono Virtual. (2023 - Presente)</p>
+                    <p>Gestión de equipos de desarrollo</p>
+                    <p>Desarrollo Backend y Frontend</p>
+                    <p>Manejo de servidores (Hostinger, Bananahosting, Inmotion)</p>
+                    <br>
+                    <p><strong>-Desarrollador Web</strong> en DNA Music. (Feb 2022 - Ago 2022)</p>
+                    <p>Administración y desarrollo con Moodle</p>
+                    <p>Desarrollo Backend y Frontend</p>
+                    <p>Administración de automatizaciones de API con Zapier y Hechas in house.</p>
+                    <br>
+                    <p><strong>-Desarrollador Web</strong> en Icono Virtual. (Feb 2020 - Feb 2022)</p>
+                    <p>Desarrollo Backend y Frontend</p>
+                </div>
 
-            <h2>Educación</h2>
-            <p><strong>Ing de Sistemas 6 Semestre</strong> en Universidad del Magdalena</p>
-            <h2>Habilidades</h2>
-            <ul>
-                <li>HTML, CSS, JavaScript, Php, Mysql</li>
-                <li>Vue js, Node.js, Laravel</li>
-                <li>Git, GitHub, Linux</li>
-            </ul>
+                <div class="column">
+                    <h2>Educación</h2>
+                    <p><strong>Ing de Sistemas 6 Semestre</strong> en Universidad del Magdalena</p>
+                    <h2>Habilidades</h2>
+                    <ul>
+                        <li>HTML, CSS, JavaScript, PHP, MySQL</li>
+                        <li>Vue.js, Node.js, Laravel</li>
+                        <li>Git, GitHub, Linux</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h2>Proyectos</h2>
+                    <ul>
+                        <li>Juego niños del viento Desarrollo Backend y logica de los juegos <a href="https://losninosdelviento.com/juegos/index.php" target="_blank" rel="noopener noreferrer">Ver Juego</a> </li>
+                    </ul>
+                </div>
+            </div>
         </section>
 
         <footer>
-            <button id="print-btn">Imprimir</button>
+            <h5>Hecho con ❤️ Romel Arango</h5>
         </footer>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+
+
